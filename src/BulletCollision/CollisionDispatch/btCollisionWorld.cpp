@@ -1330,6 +1330,7 @@ public:
 
 void btCollisionWorld::debugDrawObject(const btTransform& worldTransform, const btCollisionShape* shape, const btVector3& color)
 {
+#if 0
 	// Draw a small simplex at the center of the object
 	if (getDebugDrawer() && getDebugDrawer()->getDebugMode() & btIDebugDraw::DBG_DrawFrames)
 	{
@@ -1507,11 +1508,13 @@ void btCollisionWorld::debugDrawObject(const btTransform& worldTransform, const 
        
 		}
 	}
+#endif
 }
 
 
 void	btCollisionWorld::debugDrawWorld()
 {
+#if 0
 	if (getDebugDrawer())
 	{
 		btIDebugDraw::DefaultColors defaultColors = getDebugDrawer()->getDefaultColors();
@@ -1601,6 +1604,7 @@ void	btCollisionWorld::debugDrawWorld()
 			}
 		}
 	}
+#endif
 }
 
 
