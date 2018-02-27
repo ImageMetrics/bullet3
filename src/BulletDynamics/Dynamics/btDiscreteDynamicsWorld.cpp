@@ -282,6 +282,7 @@ void	btDiscreteDynamicsWorld::saveKinematicState(btScalar timeStep)
 
 void	btDiscreteDynamicsWorld::debugDrawWorld()
 {
+#if 0
 	BT_PROFILE("debugDrawWorld");
 
 	btCollisionWorld::debugDrawWorld();
@@ -320,7 +321,7 @@ void	btDiscreteDynamicsWorld::debugDrawWorld()
 	}
     if (getDebugDrawer())
         getDebugDrawer()->flushLines();
-
+#endif
 }
 
 void	btDiscreteDynamicsWorld::clearForces()
@@ -1175,6 +1176,7 @@ void	btDiscreteDynamicsWorld::startProfiling(btScalar timeStep)
 
 void btDiscreteDynamicsWorld::debugDrawConstraint(btTypedConstraint* constraint)
 {
+#if 0
 	bool drawFrames = (getDebugDrawer()->getDebugMode() & btIDebugDraw::DBG_DrawConstraints) != 0;
 	bool drawLimits = (getDebugDrawer()->getDebugMode() & btIDebugDraw::DBG_DrawConstraintLimits) != 0;
 	btScalar dbgDrawSize = constraint->getDbgDrawSize();
@@ -1402,6 +1404,7 @@ void btDiscreteDynamicsWorld::debugDrawConstraint(btTypedConstraint* constraint)
 			break;
 	}
 	return;
+#endif
 }
 
 
