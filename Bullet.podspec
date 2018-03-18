@@ -23,9 +23,7 @@ Image Metrics fork of Bullet repo
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target  = '10.8'
 
+  s.framework = 'Bullet'
   s.source_files = 'src/**/*.{h,hpp,c,cpp}', 'Extras/**/*.{h,hpp,c,cpp}'
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'src/**/*.{h,hpp}', 'Extras/**/*.{h,hpp}'
 end
