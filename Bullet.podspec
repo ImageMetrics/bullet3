@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Bullet'
-  s.version          = '2.86.1+NoDebugDraw'
+  s.version          = '2.86.1+NoDebugDrawTag'
   s.summary          = 'A short description of Bullet.'
 
 # This description is used to generate tags and improve search results.
